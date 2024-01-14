@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>osgi-example-service</artifactId>
+    <version>1.0.0</version>
+    <packaging>bundle</packaging>
+
+    <parent>
+        <groupId>com.example</groupId>
+        <artifactId>osgi-example-parent</artifactId>
+        <version>1.0.0</version>
+    </parent>
+
+    <properties>
+        <maven.compiler.source>20</maven.compiler.source>
+        <maven.compiler.target>20</maven.compiler.target>
+    </properties>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.felix</groupId>
+                <artifactId>maven-bundle-plugin</artifactId>
+                <version>${maven-bundle-plugin.version}</version>
+                <extensions>true</extensions>
+                <configuration>
+                    <instructions>
+                        <Bundle-Name>OSGI service bunlde</Bundle-Name>
+                        <Bundle-Version>1.0.0</Bundle-Version>
+                        <Bundle-Activator>org.service.implementation.ProductServiceImpl</Bundle-Activator>
+                        <Export-Packaging>org.service.definition,org.service.implementation</Export-Packaging>
+                    </instructions>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>
+
