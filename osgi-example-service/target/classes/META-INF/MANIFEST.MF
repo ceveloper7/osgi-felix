@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1739746328205
+Build-Jdk-Spec: 23
+Bundle-Activator: org.service.implementation.ProductServiceImpl
+Bundle-ManifestVersion: 2
+Bundle-Name: OSGI service bunlde
+Bundle-SymbolicName: com.example.osgi-example-service
+Bundle-Version: 1.0.0
+Created-By: Apache Maven Bundle Plugin 5.1.9
+Export-Package: org.service.definition;version="1.0.0"
+Export-Packaging: org.service.definition,org.service.implementation
+Import-Package: java.io,java.lang,java.util,org.osgi.framework;version="
+ [1.10,2)",org.service.definition
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=20))"
+Tool: Bnd-6.3.1.202206071316
