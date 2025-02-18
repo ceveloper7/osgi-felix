@@ -11,6 +11,8 @@
         <module>osgi-example-activator</module>
         <module>osgi-example-service</module>
         <module>osgi-example-client</module>
+        <module>osgi-inaction-ch01-greeting-service</module>
+        <module>osgi-inaction-ch01-greeting-client</module>
     </modules>
 
     <properties>

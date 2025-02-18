@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="osgi-example-activator" />
+        <module name="osgi-example-client" />
+        <module name="osgi-example-service" />
+        <module name="osgi-inaction-ch01-greeting-client" />
+        <module name="osgi-inaction-ch01-greeting-service" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="osgi-inaction-ch01-modularity-greeting" target="23" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1739764164895
+Build-Jdk-Spec: 23
+Bundle-Activator: com.ceva.hello.impl.GreetingServiceImpl
+Bundle-ManifestVersion: 2
+Bundle-Name: OSGI Greeting service bundle
+Bundle-SymbolicName: com.ceva.osgi-inaction-ch01-greeting-service
+Bundle-Version: 1.0.0
+Created-By: Apache Maven Bundle Plugin 5.1.9
+Export-Package: com.ceva.hello;version="1.0.0"
+Export-Packaging: com.ceva.hello,com.ceva.hello.impl
+Import-Package: com.ceva.hello,java.io,java.lang,java.lang.invoke,java.u
+ til,org.osgi.framework;version="[1.10,2)"
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=23))"
+Tool: Bnd-6.3.1.202206071316

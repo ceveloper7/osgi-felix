@@ -1,5 +1,5 @@
 Manifest-Version: 1.0
-Bnd-LastModified: 1739746328604
+Bnd-LastModified: 1739764164472
 Build-Jdk-Spec: 23
 Bundle-Activator: org.client.Client
 Bundle-ManifestVersion: 2

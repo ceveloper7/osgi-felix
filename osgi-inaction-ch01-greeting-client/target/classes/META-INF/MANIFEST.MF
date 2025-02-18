@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1739764165213
+Build-Jdk-Spec: 23
+Bundle-Activator: com.ceva.client.Main
+Bundle-ManifestVersion: 2
+Bundle-Name: OSGI Greeting client bundle
+Bundle-SymbolicName: com.ceva.osgi-inaction-ch01-greeting-client
+Bundle-Version: 1.0.0
+Created-By: Apache Maven Bundle Plugin 5.1.9
+Export-Package: com.ceva.client;uses:="org.osgi.framework";version="1.0.
+ 0"
+Import-Package: com.ceva.hello;version="[1.0,2)",java.io,java.lang,org.o
+ sgi.framework;version="[1.10,2)"
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=23))"
+Tool: Bnd-6.3.1.202206071316

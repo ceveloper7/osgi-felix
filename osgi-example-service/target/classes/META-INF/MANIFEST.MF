@@ -1,5 +1,5 @@
 Manifest-Version: 1.0
-Bnd-LastModified: 1739746328205
+Bnd-LastModified: 1739764164101
 Build-Jdk-Spec: 23
 Bundle-Activator: org.service.implementation.ProductServiceImpl
 Bundle-ManifestVersion: 2
