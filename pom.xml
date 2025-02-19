@@ -13,6 +13,7 @@
         <module>osgi-example-client</module>
         <module>osgi-inaction-ch01-greeting-service</module>
         <module>osgi-inaction-ch01-greeting-client</module>
+        <module>osgi-inaction-ch02-paint-nomodular</module>
     </modules>
 
     <properties>

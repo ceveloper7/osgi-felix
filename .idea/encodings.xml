@@ -7,5 +7,7 @@
     <file url="file://$PROJECT_DIR$/osgi-inaction-ch01-greeting-service/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/osgi-inaction-ch01-modularity-greeting/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/osgi-inaction-ch01-modularity-greeting/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/osgi-inaction-ch02-paint-nomodular/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/osgi-inaction-ch02-paint-nomodular/src/main/resources" charset="UTF-8" />
   </component>
 </project>

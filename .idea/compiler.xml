@@ -10,6 +10,7 @@
         <module name="osgi-example-client" />
         <module name="osgi-example-service" />
         <module name="osgi-inaction-ch01-greeting-client" />
+        <module name="paint-nomodular" />
         <module name="osgi-inaction-ch01-greeting-service" />
       </profile>
     </annotationProcessing>
