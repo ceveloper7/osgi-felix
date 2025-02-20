@@ -5,7 +5,7 @@ import java.awt.Point;
 import javax.swing.Icon;
 
 /**
- * Interface representing a simple drawable shape.
+ * Interface representing an abstract shape for painting.
  **/
 public interface SimpleShape {
 
