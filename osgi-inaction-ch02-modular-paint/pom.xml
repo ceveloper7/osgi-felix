@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.example</groupId>
+        <artifactId>osgi-example-parent</artifactId>
+        <version>1.0.0</version>
+    </parent>
+
+    <groupId>com.ceva</groupId>
+    <artifactId>osgi-inaction-ch02-modular-paint</artifactId>
+    <version>1.0.0</version>
+    <packaging>bundle</packaging>
+
+    <properties>
+        <maven.compiler.source>23</maven.compiler.source>
+        <maven.compiler.target>23</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.ceva</groupId>
+            <artifactId>osgi-inaction-ch02-modular-shape</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.ceva</groupId>
+            <artifactId>osgi-inaction-ch02-modular-shape-circle</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.ceva</groupId>
+            <artifactId>osgi-inaction-ch02-modular-shape-square</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.ceva</groupId>
+            <artifactId>osgi-inaction-ch02-modular-shape-triangle</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.felix</groupId>
+                <artifactId>maven-bundle-plugin</artifactId>
+                <version>${maven-bundle-plugin.version}</version>
+                <extensions>true</extensions>
+                <configuration>
+                    <instructions>
+                        <Bundle-name>Modular Paint</Bundle-name>
+                        <Bundle-version>1.0.0</Bundle-version>
+                        <Export-Packaging>com.ceva.paint</Export-Packaging>
+                    </instructions>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
