@@ -11,7 +11,7 @@
 
     <groupId>com.ceva</groupId>
     <artifactId>osgi-inaction-ch02-modular-shape-square</artifactId>
-    <version>1.0.0</version>
+    <version>2.0.0</version>
     <packaging>bundle</packaging>
 
     <properties>
@@ -24,7 +24,7 @@
         <dependency>
             <groupId>com.ceva</groupId>
             <artifactId>osgi-inaction-ch02-modular-shape</artifactId>
-            <version>1.0.0</version>
+            <version>2.0.0</version>
         </dependency>
     </dependencies>
 
@@ -37,9 +37,10 @@
                 <extensions>true</extensions>
                 <configuration>
                     <instructions>
-                        <Bundle-name>Modular Paint Shape Square</Bundle-name>
-                        <Bundle-version>1.0.0</Bundle-version>
-                        <Export-Packaging>com.ceva.shape.square</Export-Packaging>
+                        <Bundle-name>Square Implementation</Bundle-name>
+                        <Bundle-version>2.0.0</Bundle-version>
+                        <Import-package>javax.swing, com.ceva.shape; version="2.0.0"</Import-package>
+                        <Export-Package>com.ceva.shape.square; version="2.0.0"</Export-Package>
                     </instructions>
                 </configuration>
             </plugin>

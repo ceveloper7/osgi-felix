@@ -11,7 +11,7 @@
 
     <groupId>com.ceva</groupId>
     <artifactId>osgi-inaction-ch02-modular-shape</artifactId>
-    <version>1.0.0</version>
+    <version>2.0.0</version>
     <packaging>bundle</packaging>
 
     <properties>
@@ -29,9 +29,10 @@
                 <extensions>true</extensions>
                 <configuration>
                     <instructions>
-                        <Bundle-name>Modular Paint Shape</Bundle-name>
-                        <Bundle-version>1.0.0</Bundle-version>
-                        <Export-Packaging>com.ceva.shape</Export-Packaging>
+                        <Bundle-name>API Paint</Bundle-name>
+                        <Bundle-version>2.0.0</Bundle-version>
+                        <Import-Package>javax.swing</Import-Package>
+                        <Export-Package>com.ceva.shape; version="2.0.0"</Export-Package>
                     </instructions>
                 </configuration>
             </plugin>
