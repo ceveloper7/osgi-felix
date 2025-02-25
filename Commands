@@ -1,0 +1,32 @@
+
+Compile java file for osgi-inaction-ch02-modular-shape bundle
+javac -d classes osgi-inaction-ch02-modular-shape/src/main/java/com/ceva/shape/SimpleShape.java
+
+Create jar file for osgi-inaction-ch02-modular-shape bundle
+jar --create --file jars/api-paint.jar -C classes .
+
+Compile java file for osgi-inaction-ch02-modular-shape-circle bundle
+javac -d classes -cp jars/api-paint.jar osgi-inaction-ch02-modular-shape-circle/src/main/java/com/ceva/shape/circle/Circle.java
+
+Create jar file for osgi-inaction-ch02-modular-shape-circle bundle
+jar --create --file jars/circle-impl.jar -C classes .
+
+Compile java file for osgi-inaction-ch02-modular-shape-square bundle
+javac -d classes -cp jars/api-paint.jar osgi-inaction-ch02-modular-shape-square/src/main/java/com/ceva/shape/square/Square.java
+
+Create jar file for osgi-inaction-ch02-modular-shape-square bundle
+jar --create --file jars/square-impl.jar -C classes .
+
+Create jar file for osgi-inaction-ch02-modular-shape-triangle bundle
+jar --create --file jars/triangle-impl.jar -C classes .
+
+Compile osgi-inaction-ch02-modular-paint bundle
+javac -d classes -cp "jars/api-paint.jar:jars/circle-impl.jar:jars/square-impl.jar:jars/triangle-impl.jar"
+        osgi-inaction-ch02-modular-paint/src/main/java/com/ceva/paint/ShapeComponent.java
+        osgi-inaction-ch02-modular-paint/src/main/java/com/ceva/paint/PaintFrame.java
+
+Create jar file for osgi-inaction-ch02-modular-paint bundle
+jar --create --file jars/paint-program.jar --main-class com.ceva.paint.PaintFrame -C classes .
+
+Run osgi-inaction-ch02-modular-paint application
+java -cp "jars/paint-program.jar:jars/api-paint.jar:jars/circle-impl.jar:jars/square-impl.jar:jars/triangle-impl.jar" com.ceva.paint.PaintFrame
